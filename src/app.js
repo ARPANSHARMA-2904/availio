@@ -1,10 +1,15 @@
 const express = require("express");
+const productRoutes = require("./routes/productRoutes");
 const path = require("path");
 
 const pool = require("./config/mysql");
 const driver = require("./config/neo4j");
 
 const app = express();
+
+app.use(express.json());
+
+app.use("/products", productRoutes);
 
 app.set("view engine", "ejs");
 
