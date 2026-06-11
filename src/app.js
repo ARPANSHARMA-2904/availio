@@ -1,5 +1,6 @@
 const express = require("express");
 const productRoutes = require("./routes/productRoutes");
+const categoryRoutes = require("./routes/categoryRoutes");
 const path = require("path");
 
 const pool = require("./config/mysql");
@@ -9,7 +10,9 @@ const app = express();
 
 app.use(express.json());
 
+//Routes
 app.use("/products", productRoutes);
+app.use("/categories", categoryRoutes);
 
 app.set("view engine", "ejs");
 
