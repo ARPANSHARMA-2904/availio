@@ -111,14 +111,14 @@ exports.updateProduct = async (req, res) => {
         );
 
         if (result.affectedRows === 0) {
-            res.status(404).json({
+            return res.status(404).json({
                 message: "Product not found"
             });
         }
 
         res.status(200).json({
             message: "Product updated"
-        })
+        });
     } catch (error) {
         console.log(error);
         res.status(500).json({
@@ -137,17 +137,18 @@ exports.deleteProduct = async (req, res) => {
                 `,
             [id]);
         if (result.affectedRows === 0) {
-            res.status(404).json({
+            return res.status(404).json({
                 message: "Product not found"
             });
         }
+
         res.status(200).json({
             message: "Product deleted"
-        })
+        });
     } catch (error) {
         console.log(error);
         res.status(500).json({
-            message : "Server Error"
+            message: "Server Error"
         });
     }
 };
