@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <button class="back-btn" aria-label="Go back">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <h1 class="header-title">Inventory Managment</h1>
+            </header>
+
+            <!-- Search Bar -->
+            <div class="search-section">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input type="text" placeholder="Click here to search product" class="search-input">
+                </div>
+            </div>
+
+            <!-- Table Section -->
+            <section class="table-section">
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-cell">
+                                    <div class="product-info">
+                                        <div class="product-img">📱</div>
+                                        <span>Wireless Mouse</span>
+                                    </div>
+                                </td>
+                                <td><span class="qty-badge">45</span></td>
+                                <td class="price-cell">₹1,299</td>
+                            </tr>
+                            <tr>
+                                <td class="product-cell">
+                                    <div class="product-info">
+                                        <div class="product-img">💻</div>
+                                        <span>USB-C Cable</span>
+                                    </div>
+                                </td>
+                                <td><span class="qty-badge">120</span></td>
+                                <td class="price-cell">₹499</td>
+                            </tr>
+                            <tr>
+                                <td class="product-cell">
+                                    <div class="product-info">
+                                        <div class="product-img">🎧</div>
+                                        <span>Bluetooth Earbuds</span>
+                                    </div>
+                                </td>
+                                <td><span class="qty-badge low">8</span></td>
+                                <td class="price-cell">₹2,499</td>
+                            </tr>
+                            <tr class="empty-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="empty-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="product-cell">
+                                    <div class="product-info">
+                                        <div class="product-img">⌨️</div>
+                                        <span>Mechanical Keyboard</span>
+                                    </div>
+                                </td>
+                                <td><span class="qty-badge">23</span></td>
+                                <td class="price-cell">₹3,999</td>
+                            </tr>
+                            <tr class="empty-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Floating Action Button -->
+            <div class="fab-section">
+                <button class="fab-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"/>
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                    </svg>
+                    Edit Item
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

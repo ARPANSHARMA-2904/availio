@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Search by Store</title>
+    <link rel="stylesheet" href="search-by-store.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <button class="back-btn" aria-label="Go back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            <button class="bell-btn" aria-label="Notifications">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                </svg>
+                <span class="notification-dot"></span>
+            </button>
+        </header>
+
+        <!-- Title Section -->
+        <section class="title-section">
+            <h1 class="main-title">Search by store</h1>
+        </section>
+
+        <!-- Search Bar -->
+        <div class="search-section">
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+                <input type="text" placeholder="Enter the name of the store you want to search" class="search-input">
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <section class="table-section">
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Product<br>name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filled rows (real store data) -->
+                        <tr>
+                            <td class="product-cell">
+                                <div class="product-info">
+                                    <div class="store-badge spencer">S</div>
+                                    <div class="product-details">
+                                        <span class="store-name">Spencer's</span>
+                                        <span class="product-name">Organic Rice</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="qty-badge">50</span></td>
+                            <td class="price-cell">₹89</td>
+                        </tr>
+                        <tr>
+                            <td class="product-cell">
+                                <div class="product-info">
+                                    <div class="store-badge bigbasket">B</div>
+                                    <div class="product-details">
+                                        <span class="store-name">BigBasket</span>
+                                        <span class="product-name">Fresh Milk</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="qty-badge">120</span></td>
+                            <td class="price-cell">₹56</td>
+                        </tr>
+                        <tr>
+                            <td class="product-cell">
+                                <div class="product-info">
+                                    <div class="store-badge dmart">D</div>
+                                    <div class="product-details">
+                                        <span class="store-name">D-Mart</span>
+                                        <span class="product-name">Bread</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="qty-badge low">8</span></td>
+                            <td class="price-cell">₹35</td>
+                        </tr>
+                        <tr>
+                            <td class="product-cell">
+                                <div class="product-info">
+                                    <div class="store-badge reliance">R</div>
+                                    <div class="product-details">
+                                        <span class="store-name">Reliance</span>
+                                        <span class="product-name">Cooking Oil</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="qty-badge">75</span></td>
+                            <td class="price-cell">₹149</td>
+                        </tr>
+        
+                        
+                        <tr class="empty-row">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="empty-row">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="empty-row">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
